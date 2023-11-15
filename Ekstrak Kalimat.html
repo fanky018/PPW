@@ -1,0 +1,1755 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Crawling Berita &#8212; PPW</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Ekstrak Kalimat';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Crawling PTA" href="Crawling.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="PPW - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="PPW - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Home</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Task</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Latent%20Dirichlet%20Allocation.html">LDA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Crawling.html">Crawling PTA</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Crawling Berita</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/fanky018/prosain/blob/master/docs/Ekstrak Kalimat.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/fanky018/prosain" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/fanky018/prosain/issues/new?title=Issue%20on%20page%20%2FEkstrak Kalimat.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Ekstrak Kalimat.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Crawling Berita</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="crawling-berita">
+<h1>Crawling Berita<a class="headerlink" href="#crawling-berita" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="kn">import</span> <span class="n">cosine_similarity</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Input URL Berita</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://www.antaranews.com/berita/3798024/anies-muhaimin-ajak-warga-jember-doakan-rakyat-palestina&quot;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">html</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span>
+
+<span class="c1"># Parsing halaman web menggunakan BeautifulSoup</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+
+<span class="c1"># Ekstraksi teks dari elemen-elemen yang berisi berita</span>
+<span class="n">article</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s2">&quot;post-content clearfix&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">article</span><span class="p">:</span>
+    <span class="n">article_text</span> <span class="o">=</span> <span class="n">article</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span>
+
+    <span class="c1"># Tokenisasi teks menjadi kalimat menggunakan nltk</span>
+    <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+    <span class="n">sentences</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">sent_tokenize</span><span class="p">(</span><span class="n">article_text</span><span class="p">)</span>
+
+    <span class="c1"># Cetak kalimat-kalimat</span>
+    <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">sentences</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elemen berita tidak ditemukan.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Unzipping tokenizers/punkt.zip.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>				Jember, Jawa Timur (ANTARA) - Pasangan bakal calon presiden (capres) dan calon wakil presiden (cawapres) , Anies Baswedan dan Muhaimin Iskandar mengajak warga Kabupaten Jember, Jawa Timur mendoakan rakyat Palestina agar segera merdeka dan menjadi bangsa yang mandiri.
+&quot;Mari berdoa untuk saudara kita di Palestina, memohon agar rakyat Palestina selamat dari gempuran Israel dan segera merdeka,&quot; kata Muhaimin di sela-sela kegiatan safari politiknya di Jember, Minggu.
+Ia mengajak ribuan warga yang hadir dalam kegiatan jalan sehat bersarung di Jember untuk membaca surat Al-Fatihah bersama-sama dengan harapan bangsa Palestina segera merdeka dan menjadi bangsa yang mandiri.
+&quot;Bangsa Indonesia diharapkan memberikan jalan keluar.
+Semua ikhtiar sudah dilakukan dan diplomasi oleh Menteri Luar Negeri Bu Retno sudah dijalankan, namun PBB tumpul tak berdaya,&quot; tuturnya.
+Menurutnya Indonesia harus memberikan pertolongan kepada rakyat Palestina karena Indonesia sebagai negara dengan penduduk muslim terbesar, sehingga bisa menolong negara lain.
+&quot;Kalau AMIN menang maka kami tolong saudara kita di Palestina, Rohingya, dan saudara muslim lainnya di dunia,&quot; ucap Wakil Ketua DPR RI tersebut.
+Muhaimin juga mengenakan pita bendera Palestina yang diikat di lengannya sebagai aksi solidaritas mendukung perjuangan rakyat Palestina untuk merdeka dan mengecam tindakan brutal Israel.
+Sementara itu Anies Baswedan juga memuji Menteri Luar Negeri Retno Marsudi dalam membela perjuangan rakyat Palestina dan mengutuk kekejaman Israel yang menyebabkan banyak warga sipil menjadi korban.
+&quot;Saya ingin sampaikan apresiasi kepada Ibu Menlu yang di dalam Sidang PBB menyampaikan sikap yang tegas, yang jelas, atas posisi Indonesia,&quot; katanya.
+Ia mengatakan sejak awal kemerdekaan Republik Indonesia menggarisbawahi sesuatu tentang kemerdekaan adalah hak segala bangsa, sehingga penjajahan harus dihapuskan dari muka bumi.
+&quot;Kami semua hapal itu dan harus dipegang, sehingga harus diperjuangkan.
+Saya hormat kepada sikap yang dilakukan Kementerian Luar Negeri melalui Ibu Menlu.
+Sikap itu harus terus dijaga,&quot; tuturnya.
+Dalam sidang darurat Majelis Umum Persatuan Bangsa-Bangsa, di New York, Amerika Serikat, Kamis (26/10), Menlu Retno mengecam Dewan Keamanan PBB yang gagal bertindak dan gagal menghasilkan tindakan yang tegas dalam konflik Palestina dan Israel.
+Baca juga: Anies Baswedan ajak pendukungnya doakan kemerdekaan Palestina
+Baca juga: Anies Baswedan ajak masyarakat Indonesia doakan bangsa Palestina
+ Pewarta: Zumrotun SolichahEditor: Guido Merung				COPYRIGHT © ANTARA 2023
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inisialisasi penghitung TF-IDF</span>
+<span class="n">tfidf_vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
+
+<span class="c1"># Hitung TF-IDF</span>
+<span class="n">tfidf_matrix</span> <span class="o">=</span> <span class="n">tfidf_vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span>
+
+<span class="c1"># Daftar kata kunci</span>
+<span class="n">feature_names</span> <span class="o">=</span> <span class="n">tfidf_vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
+
+<span class="c1"># Konversi matriks TF-IDF</span>
+<span class="n">tfidf_values</span> <span class="o">=</span> <span class="n">tfidf_matrix</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+
+<span class="c1"># Cetak TF-IDF untuk setiap kata dalam setiap kalimat</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sentences</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Kalimat </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">sentence</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">feature_names</span><span class="p">):</span>
+        <span class="n">tfidf_value</span> <span class="o">=</span> <span class="n">tfidf_values</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">tfidf_value</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">word</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">tfidf_value</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kalimat 1: 
+				Jember, Jawa Timur (ANTARA) - Pasangan bakal calon presiden (capres) dan calon wakil presiden (cawapres) , Anies Baswedan dan Muhaimin Iskandar mengajak warga Kabupaten Jember, Jawa Timur mendoakan rakyat Palestina agar segera merdeka dan menjadi bangsa yang mandiri.
+agar: 0.1435
+anies: 0.1284
+antara: 0.1435
+bakal: 0.1648
+bangsa: 0.0990
+baswedan: 0.1284
+calon: 0.3295
+capres: 0.1648
+cawapres: 0.1648
+dan: 0.2409
+iskandar: 0.1648
+jawa: 0.3295
+jember: 0.2568
+kabupaten: 0.1648
+mandiri: 0.1435
+mendoakan: 0.1648
+mengajak: 0.1435
+menjadi: 0.1284
+merdeka: 0.1167
+muhaimin: 0.1284
+palestina: 0.0803
+pasangan: 0.1648
+presiden: 0.3295
+rakyat: 0.1071
+segera: 0.1284
+timur: 0.3295
+wakil: 0.1435
+warga: 0.1284
+yang: 0.0920
+
+Kalimat 2: &quot;Mari berdoa untuk saudara kita di Palestina, memohon agar rakyat Palestina selamat dari gempuran Israel dan segera merdeka,&quot; kata Muhaimin di sela-sela kegiatan safari politiknya di Jember, Minggu.
+agar: 0.1739
+berdoa: 0.1997
+dan: 0.0973
+dari: 0.1739
+di: 0.3600
+gempuran: 0.1997
+israel: 0.1414
+jember: 0.1556
+kata: 0.1997
+kegiatan: 0.1739
+kita: 0.1739
+mari: 0.1997
+memohon: 0.1997
+merdeka: 0.1414
+minggu: 0.1997
+muhaimin: 0.1556
+palestina: 0.1946
+politiknya: 0.1997
+rakyat: 0.1298
+safari: 0.1997
+saudara: 0.1739
+segera: 0.1556
+sela: 0.3993
+selamat: 0.1997
+untuk: 0.1556
+
+Kalimat 3: Ia mengajak ribuan warga yang hadir dalam kegiatan jalan sehat bersarung di Jember untuk membaca surat Al-Fatihah bersama-sama dengan harapan bangsa Palestina segera merdeka dan menjadi bangsa yang mandiri.
+al: 0.2080
+bangsa: 0.2500
+bersama: 0.2080
+bersarung: 0.2080
+dalam: 0.1473
+dan: 0.1014
+dengan: 0.1811
+di: 0.1250
+fatihah: 0.2080
+hadir: 0.2080
+harapan: 0.2080
+ia: 0.1811
+jalan: 0.1811
+jember: 0.1621
+kegiatan: 0.1811
+mandiri: 0.1811
+membaca: 0.2080
+mengajak: 0.1811
+menjadi: 0.1621
+merdeka: 0.1473
+palestina: 0.1014
+ribuan: 0.2080
+sama: 0.2080
+segera: 0.1621
+sehat: 0.2080
+surat: 0.2080
+untuk: 0.1621
+warga: 0.1621
+yang: 0.2323
+
+Kalimat 4: &quot;Bangsa Indonesia diharapkan memberikan jalan keluar.
+bangsa: 0.2898
+diharapkan: 0.4822
+indonesia: 0.3135
+jalan: 0.4199
+keluar: 0.4822
+memberikan: 0.4199
+
+Kalimat 5: Semua ikhtiar sudah dilakukan dan diplomasi oleh Menteri Luar Negeri Bu Retno sudah dijalankan, namun PBB tumpul tak berdaya,&quot; tuturnya.
+berdaya: 0.2312
+bu: 0.2312
+dan: 0.1127
+dijalankan: 0.2312
+dilakukan: 0.2014
+diplomasi: 0.2312
+ikhtiar: 0.2312
+luar: 0.1802
+menteri: 0.2014
+namun: 0.2312
+negeri: 0.1802
+oleh: 0.2312
+pbb: 0.1802
+retno: 0.1802
+semua: 0.2014
+sudah: 0.4625
+tak: 0.2312
+tumpul: 0.2312
+tuturnya: 0.2014
+
+Kalimat 6: Menurutnya Indonesia harus memberikan pertolongan kepada rakyat Palestina karena Indonesia sebagai negara dengan penduduk muslim terbesar, sehingga bisa menolong negara lain.
+bisa: 0.2288
+dengan: 0.1993
+harus: 0.1620
+indonesia: 0.2975
+karena: 0.2288
+kepada: 0.1783
+lain: 0.2288
+memberikan: 0.1993
+menolong: 0.2288
+menurutnya: 0.2288
+muslim: 0.1993
+negara: 0.4576
+palestina: 0.1115
+penduduk: 0.2288
+pertolongan: 0.2288
+rakyat: 0.1488
+sebagai: 0.1993
+sehingga: 0.1783
+terbesar: 0.2288
+
+Kalimat 7: &quot;Kalau AMIN menang maka kami tolong saudara kita di Palestina, Rohingya, dan saudara muslim lainnya di dunia,&quot; ucap Wakil Ketua DPR RI tersebut.
+amin: 0.2183
+dan: 0.1064
+di: 0.2624
+dpr: 0.2183
+dunia: 0.2183
+kalau: 0.2183
+kami: 0.1901
+ketua: 0.2183
+kita: 0.1901
+lainnya: 0.2183
+maka: 0.2183
+menang: 0.2183
+muslim: 0.1901
+palestina: 0.1064
+ri: 0.2183
+rohingya: 0.2183
+saudara: 0.3802
+tersebut: 0.2183
+tolong: 0.2183
+ucap: 0.2183
+wakil: 0.1901
+
+Kalimat 8: Muhaimin juga mengenakan pita bendera Palestina yang diikat di lengannya sebagai aksi solidaritas mendukung perjuangan rakyat Palestina untuk merdeka dan mengecam tindakan brutal Israel.
+aksi: 0.2415
+bendera: 0.2415
+brutal: 0.2415
+dan: 0.1177
+di: 0.1452
+diikat: 0.2415
+israel: 0.1710
+juga: 0.1882
+lengannya: 0.2415
+mendukung: 0.2415
+mengecam: 0.2103
+mengenakan: 0.2415
+merdeka: 0.1710
+muhaimin: 0.1882
+palestina: 0.2355
+perjuangan: 0.2103
+pita: 0.2415
+rakyat: 0.1570
+sebagai: 0.2103
+solidaritas: 0.2415
+tindakan: 0.2103
+untuk: 0.1882
+yang: 0.1349
+
+Kalimat 9: Sementara itu Anies Baswedan juga memuji Menteri Luar Negeri Retno Marsudi dalam membela perjuangan rakyat Palestina dan mengutuk kekejaman Israel yang menyebabkan banyak warga sipil menjadi korban.
+anies: 0.1779
+banyak: 0.2282
+baswedan: 0.1779
+dalam: 0.1616
+dan: 0.1113
+israel: 0.1616
+itu: 0.1779
+juga: 0.1779
+kekejaman: 0.2282
+korban: 0.2282
+luar: 0.1779
+marsudi: 0.2282
+membela: 0.2282
+memuji: 0.2282
+mengutuk: 0.2282
+menjadi: 0.1779
+menteri: 0.1988
+menyebabkan: 0.2282
+negeri: 0.1779
+palestina: 0.1113
+perjuangan: 0.1988
+rakyat: 0.1484
+retno: 0.1779
+sementara: 0.2282
+sipil: 0.2282
+warga: 0.1779
+yang: 0.1275
+
+Kalimat 10: &quot;Saya ingin sampaikan apresiasi kepada Ibu Menlu yang di dalam Sidang PBB menyampaikan sikap yang tegas, yang jelas, atas posisi Indonesia,&quot; katanya.
+apresiasi: 0.2387
+atas: 0.2387
+dalam: 0.1690
+di: 0.1434
+ibu: 0.2078
+indonesia: 0.1552
+ingin: 0.2387
+jelas: 0.2387
+katanya: 0.2387
+kepada: 0.1860
+menlu: 0.1860
+menyampaikan: 0.2387
+pbb: 0.1860
+posisi: 0.2387
+sampaikan: 0.2387
+saya: 0.2078
+sidang: 0.2078
+sikap: 0.1860
+tegas: 0.2078
+yang: 0.3999
+
+Kalimat 11: Ia mengatakan sejak awal kemerdekaan Republik Indonesia menggarisbawahi sesuatu tentang kemerdekaan adalah hak segala bangsa, sehingga penjajahan harus dihapuskan dari muka bumi.
+adalah: 0.2212
+awal: 0.2212
+bangsa: 0.1329
+bumi: 0.2212
+dari: 0.1926
+dihapuskan: 0.2212
+hak: 0.2212
+harus: 0.1566
+ia: 0.1926
+indonesia: 0.1438
+kemerdekaan: 0.3852
+mengatakan: 0.2212
+menggarisbawahi: 0.2212
+muka: 0.2212
+penjajahan: 0.2212
+republik: 0.2212
+segala: 0.2212
+sehingga: 0.1723
+sejak: 0.2212
+sesuatu: 0.2212
+tentang: 0.2212
+
+Kalimat 12: &quot;Kami semua hapal itu dan harus dipegang, sehingga harus diperjuangkan.
+dan: 0.1726
+dipegang: 0.3541
+diperjuangkan: 0.3541
+hapal: 0.3541
+harus: 0.5016
+itu: 0.2759
+kami: 0.3084
+sehingga: 0.2759
+semua: 0.3084
+
+Kalimat 13: Saya hormat kepada sikap yang dilakukan Kementerian Luar Negeri melalui Ibu Menlu.
+dilakukan: 0.2966
+hormat: 0.3405
+ibu: 0.2966
+kementerian: 0.3405
+kepada: 0.2654
+luar: 0.2654
+melalui: 0.3405
+menlu: 0.2654
+negeri: 0.2654
+saya: 0.2966
+sikap: 0.2654
+yang: 0.1902
+
+Kalimat 14: Sikap itu harus terus dijaga,&quot; tuturnya.
+dijaga: 0.4727
+harus: 0.3348
+itu: 0.3684
+sikap: 0.3684
+terus: 0.4727
+tuturnya: 0.4117
+
+Kalimat 15: Dalam sidang darurat Majelis Umum Persatuan Bangsa-Bangsa, di New York, Amerika Serikat, Kamis (26/10), Menlu Retno mengecam Dewan Keamanan PBB yang gagal bertindak dan gagal menghasilkan tindakan yang tegas dalam konflik Palestina dan Israel.
+10: 0.1779
+26: 0.1779
+amerika: 0.1779
+bangsa: 0.2138
+bertindak: 0.1779
+dalam: 0.2519
+dan: 0.1734
+darurat: 0.1779
+dewan: 0.1779
+di: 0.1069
+gagal: 0.3558
+israel: 0.1260
+kamis: 0.1779
+keamanan: 0.1779
+konflik: 0.1779
+majelis: 0.1779
+mengecam: 0.1549
+menghasilkan: 0.1779
+menlu: 0.1386
+new: 0.1779
+palestina: 0.0867
+pbb: 0.1386
+persatuan: 0.1779
+retno: 0.1386
+serikat: 0.1779
+sidang: 0.1549
+tegas: 0.1549
+tindakan: 0.1549
+umum: 0.1779
+yang: 0.1987
+york: 0.1779
+
+Kalimat 16: Baca juga: Anies Baswedan ajak pendukungnya doakan kemerdekaan Palestina
+Baca juga: Anies Baswedan ajak masyarakat Indonesia doakan bangsa Palestina
+ Pewarta: Zumrotun SolichahEditor: Guido Merung				COPYRIGHT © ANTARA 2023
+2023: 0.1781
+ajak: 0.3561
+anies: 0.2775
+antara: 0.1551
+baca: 0.3561
+bangsa: 0.1070
+baswedan: 0.2775
+copyright: 0.1781
+doakan: 0.3561
+guido: 0.1781
+indonesia: 0.1158
+juga: 0.2775
+kemerdekaan: 0.1551
+masyarakat: 0.1781
+merung: 0.1781
+palestina: 0.1736
+pendukungnya: 0.1781
+pewarta: 0.1781
+solichaheditor: 0.1781
+zumrotun: 0.1781
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Indeks kalimat yang akan dibandingkan</span>
+<span class="n">sentence1_index</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">sentence2_index</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Vektor TF-IDF untuk kedua kalimat</span>
+<span class="n">tfidf_vector1</span> <span class="o">=</span> <span class="n">tfidf_matrix</span><span class="p">[</span><span class="n">sentence1_index</span><span class="p">]</span>
+<span class="n">tfidf_vector2</span> <span class="o">=</span> <span class="n">tfidf_matrix</span><span class="p">[</span><span class="n">sentence2_index</span><span class="p">]</span>
+
+<span class="c1"># menghitung cosine similarity antara kedua vektor</span>
+<span class="n">similarity</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">tfidf_vector1</span><span class="p">,</span> <span class="n">tfidf_vector2</span><span class="p">)</span>
+
+<span class="c1"># Cetak hasil cosine similarity</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cosine Similarity antara Kalimat </span><span class="si">{</span><span class="n">sentence1_index</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> dan Kalimat </span><span class="si">{</span><span class="n">sentence2_index</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">similarity</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cosine Similarity antara Kalimat 1 dan Kalimat 2: 0.1743
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Matriks TF-IDF telah dihitung sebelumnya (tfidf_matrix)</span>
+
+<span class="c1"># Hitung cosine similarity antara semua pasangan kalimat</span>
+<span class="n">similarity_matrix</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="p">,</span> <span class="n">tfidf_matrix</span><span class="p">)</span>
+
+<span class="c1"># Cetak hasil similarity_matrix</span>
+<span class="n">num_sentences</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span>  <span class="c1"># Jumlah kalimat</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_sentences</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sentences</span><span class="p">):</span>
+        <span class="n">similarity</span> <span class="o">=</span> <span class="n">similarity_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cosine Similarity antara Kalimat </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> dan Kalimat </span><span class="si">{</span><span class="n">j</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">similarity</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cosine Similarity antara Kalimat 1 dan Kalimat 2: 0.1743
+Cosine Similarity antara Kalimat 1 dan Kalimat 3: 0.2519
+Cosine Similarity antara Kalimat 1 dan Kalimat 4: 0.0287
+Cosine Similarity antara Kalimat 1 dan Kalimat 5: 0.0272
+Cosine Similarity antara Kalimat 1 dan Kalimat 6: 0.0249
+Cosine Similarity antara Kalimat 1 dan Kalimat 7: 0.0615
+Cosine Similarity antara Kalimat 1 dan Kalimat 8: 0.1206
+Cosine Similarity antara Kalimat 1 dan Kalimat 9: 0.1547
+Cosine Similarity antara Kalimat 1 dan Kalimat 10: 0.0368
+Cosine Similarity antara Kalimat 1 dan Kalimat 11: 0.0132
+Cosine Similarity antara Kalimat 1 dan Kalimat 12: 0.0416
+Cosine Similarity antara Kalimat 1 dan Kalimat 13: 0.0175
+Cosine Similarity antara Kalimat 1 dan Kalimat 14: 0.0000
+Cosine Similarity antara Kalimat 1 dan Kalimat 15: 0.0882
+Cosine Similarity antara Kalimat 1 dan Kalimat 16: 0.1181
+Cosine Similarity antara Kalimat 2 dan Kalimat 3: 0.2026
+Cosine Similarity antara Kalimat 2 dan Kalimat 4: 0.0000
+Cosine Similarity antara Kalimat 2 dan Kalimat 5: 0.0110
+Cosine Similarity antara Kalimat 2 dan Kalimat 6: 0.0410
+Cosine Similarity antara Kalimat 2 dan Kalimat 7: 0.2247
+Cosine Similarity antara Kalimat 2 dan Kalimat 8: 0.2369
+Cosine Similarity antara Kalimat 2 dan Kalimat 9: 0.0746
+Cosine Similarity antara Kalimat 2 dan Kalimat 10: 0.0516
+Cosine Similarity antara Kalimat 2 dan Kalimat 11: 0.0335
+Cosine Similarity antara Kalimat 2 dan Kalimat 12: 0.0168
+Cosine Similarity antara Kalimat 2 dan Kalimat 13: 0.0000
+Cosine Similarity antara Kalimat 2 dan Kalimat 14: 0.0000
+Cosine Similarity antara Kalimat 2 dan Kalimat 15: 0.0901
+Cosine Similarity antara Kalimat 2 dan Kalimat 16: 0.0338
+Cosine Similarity antara Kalimat 3 dan Kalimat 4: 0.1485
+Cosine Similarity antara Kalimat 3 dan Kalimat 5: 0.0114
+Cosine Similarity antara Kalimat 3 dan Kalimat 6: 0.0474
+Cosine Similarity antara Kalimat 3 dan Kalimat 7: 0.0544
+Cosine Similarity antara Kalimat 3 dan Kalimat 8: 0.1410
+Cosine Similarity antara Kalimat 3 dan Kalimat 9: 0.1336
+Cosine Similarity antara Kalimat 3 dan Kalimat 10: 0.1357
+Cosine Similarity antara Kalimat 3 dan Kalimat 11: 0.0681
+Cosine Similarity antara Kalimat 3 dan Kalimat 12: 0.0175
+Cosine Similarity antara Kalimat 3 dan Kalimat 13: 0.0442
+Cosine Similarity antara Kalimat 3 dan Kalimat 14: 0.0000
+Cosine Similarity antara Kalimat 3 dan Kalimat 15: 0.1765
+Cosine Similarity antara Kalimat 3 dan Kalimat 16: 0.0444
+Cosine Similarity antara Kalimat 4 dan Kalimat 5: 0.0000
+Cosine Similarity antara Kalimat 4 dan Kalimat 6: 0.1769
+Cosine Similarity antara Kalimat 4 dan Kalimat 7: 0.0000
+Cosine Similarity antara Kalimat 4 dan Kalimat 8: 0.0000
+Cosine Similarity antara Kalimat 4 dan Kalimat 9: 0.0000
+Cosine Similarity antara Kalimat 4 dan Kalimat 10: 0.0486
+Cosine Similarity antara Kalimat 4 dan Kalimat 11: 0.0836
+Cosine Similarity antara Kalimat 4 dan Kalimat 12: 0.0000
+Cosine Similarity antara Kalimat 4 dan Kalimat 13: 0.0000
+Cosine Similarity antara Kalimat 4 dan Kalimat 14: 0.0000
+Cosine Similarity antara Kalimat 4 dan Kalimat 15: 0.0620
+Cosine Similarity antara Kalimat 4 dan Kalimat 16: 0.0673
+Cosine Similarity antara Kalimat 5 dan Kalimat 6: 0.0000
+Cosine Similarity antara Kalimat 5 dan Kalimat 7: 0.0120
+Cosine Similarity antara Kalimat 5 dan Kalimat 8: 0.0133
+Cosine Similarity antara Kalimat 5 dan Kalimat 9: 0.1487
+Cosine Similarity antara Kalimat 5 dan Kalimat 10: 0.0335
+Cosine Similarity antara Kalimat 5 dan Kalimat 11: 0.0000
+Cosine Similarity antara Kalimat 5 dan Kalimat 12: 0.0816
+Cosine Similarity antara Kalimat 5 dan Kalimat 13: 0.1554
+Cosine Similarity antara Kalimat 5 dan Kalimat 14: 0.0829
+Cosine Similarity antara Kalimat 5 dan Kalimat 15: 0.0695
+Cosine Similarity antara Kalimat 5 dan Kalimat 16: 0.0000
+Cosine Similarity antara Kalimat 6 dan Kalimat 7: 0.0497
+Cosine Similarity antara Kalimat 6 dan Kalimat 8: 0.0915
+Cosine Similarity antara Kalimat 6 dan Kalimat 9: 0.0345
+Cosine Similarity antara Kalimat 6 dan Kalimat 10: 0.0793
+Cosine Similarity antara Kalimat 6 dan Kalimat 11: 0.0989
+Cosine Similarity antara Kalimat 6 dan Kalimat 12: 0.1305
+Cosine Similarity antara Kalimat 6 dan Kalimat 13: 0.0473
+Cosine Similarity antara Kalimat 6 dan Kalimat 14: 0.0543
+Cosine Similarity antara Kalimat 6 dan Kalimat 15: 0.0097
+Cosine Similarity antara Kalimat 6 dan Kalimat 16: 0.0538
+Cosine Similarity antara Kalimat 7 dan Kalimat 8: 0.0757
+Cosine Similarity antara Kalimat 7 dan Kalimat 9: 0.0237
+Cosine Similarity antara Kalimat 7 dan Kalimat 10: 0.0376
+Cosine Similarity antara Kalimat 7 dan Kalimat 11: 0.0000
+Cosine Similarity antara Kalimat 7 dan Kalimat 12: 0.0770
+Cosine Similarity antara Kalimat 7 dan Kalimat 13: 0.0000
+Cosine Similarity antara Kalimat 7 dan Kalimat 14: 0.0000
+Cosine Similarity antara Kalimat 7 dan Kalimat 15: 0.0557
+Cosine Similarity antara Kalimat 7 dan Kalimat 16: 0.0185
+Cosine Similarity antara Kalimat 8 dan Kalimat 9: 0.1827
+Cosine Similarity antara Kalimat 8 dan Kalimat 10: 0.0748
+Cosine Similarity antara Kalimat 8 dan Kalimat 11: 0.0000
+Cosine Similarity antara Kalimat 8 dan Kalimat 12: 0.0203
+Cosine Similarity antara Kalimat 8 dan Kalimat 13: 0.0257
+Cosine Similarity antara Kalimat 8 dan Kalimat 14: 0.0000
+Cosine Similarity antara Kalimat 8 dan Kalimat 15: 0.1699
+Cosine Similarity antara Kalimat 8 dan Kalimat 16: 0.0931
+Cosine Similarity antara Kalimat 9 dan Kalimat 10: 0.0783
+Cosine Similarity antara Kalimat 9 dan Kalimat 11: 0.0000
+Cosine Similarity antara Kalimat 9 dan Kalimat 12: 0.0683
+Cosine Similarity antara Kalimat 9 dan Kalimat 13: 0.1186
+Cosine Similarity antara Kalimat 9 dan Kalimat 14: 0.0655
+Cosine Similarity antara Kalimat 9 dan Kalimat 15: 0.1400
+Cosine Similarity antara Kalimat 9 dan Kalimat 16: 0.1674
+Cosine Similarity antara Kalimat 10 dan Kalimat 11: 0.0223
+Cosine Similarity antara Kalimat 10 dan Kalimat 12: 0.0000
+Cosine Similarity antara Kalimat 10 dan Kalimat 13: 0.3474
+Cosine Similarity antara Kalimat 10 dan Kalimat 14: 0.0685
+Cosine Similarity antara Kalimat 10 dan Kalimat 15: 0.2533
+Cosine Similarity antara Kalimat 10 dan Kalimat 16: 0.0180
+Cosine Similarity antara Kalimat 11 dan Kalimat 12: 0.1261
+Cosine Similarity antara Kalimat 11 dan Kalimat 13: 0.0000
+Cosine Similarity antara Kalimat 11 dan Kalimat 14: 0.0524
+Cosine Similarity antara Kalimat 11 dan Kalimat 15: 0.0284
+Cosine Similarity antara Kalimat 11 dan Kalimat 16: 0.0906
+Cosine Similarity antara Kalimat 12 dan Kalimat 13: 0.0000
+Cosine Similarity antara Kalimat 12 dan Kalimat 14: 0.2696
+Cosine Similarity antara Kalimat 12 dan Kalimat 15: 0.0299
+Cosine Similarity antara Kalimat 12 dan Kalimat 16: 0.0000
+Cosine Similarity antara Kalimat 13 dan Kalimat 14: 0.0978
+Cosine Similarity antara Kalimat 13 dan Kalimat 15: 0.0746
+Cosine Similarity antara Kalimat 13 dan Kalimat 16: 0.0000
+Cosine Similarity antara Kalimat 14 dan Kalimat 15: 0.0000
+Cosine Similarity antara Kalimat 14 dan Kalimat 16: 0.0000
+Cosine Similarity antara Kalimat 15 dan Kalimat 16: 0.0379
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Matriks TF-IDF telah dihitung sebelumnya (tfidf_matrix)</span>
+<span class="c1"># Hitung cosine similarity antara semua pasangan kalimat</span>
+<span class="n">similarity_matrix</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="p">,</span> <span class="n">tfidf_matrix</span><span class="p">)</span>
+
+<span class="c1"># Nama kolom dan indeks untuk DataFrame</span>
+<span class="n">sentence_indices</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;Kalimat </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sentences</span><span class="p">))]</span>
+
+<span class="c1"># Buat DataFrame dari hasil cosine similarity</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">similarity_matrix</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">sentence_indices</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">sentence_indices</span><span class="p">)</span>
+
+<span class="c1"># Cetak DataFrame</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-3e34646e-dd06-428c-9c14-cf56d122eaf2" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Kalimat 1</th>
+      <th>Kalimat 2</th>
+      <th>Kalimat 3</th>
+      <th>Kalimat 4</th>
+      <th>Kalimat 5</th>
+      <th>Kalimat 6</th>
+      <th>Kalimat 7</th>
+      <th>Kalimat 8</th>
+      <th>Kalimat 9</th>
+      <th>Kalimat 10</th>
+      <th>Kalimat 11</th>
+      <th>Kalimat 12</th>
+      <th>Kalimat 13</th>
+      <th>Kalimat 14</th>
+      <th>Kalimat 15</th>
+      <th>Kalimat 16</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Kalimat 1</th>
+      <td>1.000000</td>
+      <td>0.174334</td>
+      <td>0.251905</td>
+      <td>0.028700</td>
+      <td>0.027159</td>
+      <td>0.024892</td>
+      <td>0.061458</td>
+      <td>0.120632</td>
+      <td>0.154712</td>
+      <td>0.036799</td>
+      <td>0.013164</td>
+      <td>0.041588</td>
+      <td>0.017502</td>
+      <td>0.000000</td>
+      <td>0.088204</td>
+      <td>0.118053</td>
+    </tr>
+    <tr>
+      <th>Kalimat 2</th>
+      <td>0.174334</td>
+      <td>1.000000</td>
+      <td>0.202564</td>
+      <td>0.000000</td>
+      <td>0.010970</td>
+      <td>0.041019</td>
+      <td>0.224688</td>
+      <td>0.236869</td>
+      <td>0.074602</td>
+      <td>0.051642</td>
+      <td>0.033490</td>
+      <td>0.016799</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.090054</td>
+      <td>0.033790</td>
+    </tr>
+    <tr>
+      <th>Kalimat 3</th>
+      <td>0.251905</td>
+      <td>0.202564</td>
+      <td>1.000000</td>
+      <td>0.148516</td>
+      <td>0.011428</td>
+      <td>0.047398</td>
+      <td>0.054373</td>
+      <td>0.140987</td>
+      <td>0.133634</td>
+      <td>0.135729</td>
+      <td>0.068119</td>
+      <td>0.017499</td>
+      <td>0.044185</td>
+      <td>0.000000</td>
+      <td>0.176460</td>
+      <td>0.044356</td>
+    </tr>
+    <tr>
+      <th>Kalimat 4</th>
+      <td>0.028700</td>
+      <td>0.000000</td>
+      <td>0.148516</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.176947</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.048643</td>
+      <td>0.083603</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.061970</td>
+      <td>0.067310</td>
+    </tr>
+    <tr>
+      <th>Kalimat 5</th>
+      <td>0.027159</td>
+      <td>0.010970</td>
+      <td>0.011428</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.011994</td>
+      <td>0.013271</td>
+      <td>0.148726</td>
+      <td>0.033514</td>
+      <td>0.000000</td>
+      <td>0.081561</td>
+      <td>0.155361</td>
+      <td>0.082912</td>
+      <td>0.069504</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Kalimat 6</th>
+      <td>0.024892</td>
+      <td>0.041019</td>
+      <td>0.047398</td>
+      <td>0.176947</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.049747</td>
+      <td>0.091534</td>
+      <td>0.034483</td>
+      <td>0.079325</td>
+      <td>0.098890</td>
+      <td>0.130473</td>
+      <td>0.047315</td>
+      <td>0.054251</td>
+      <td>0.009671</td>
+      <td>0.053804</td>
+    </tr>
+    <tr>
+      <th>Kalimat 7</th>
+      <td>0.061458</td>
+      <td>0.224688</td>
+      <td>0.054373</td>
+      <td>0.000000</td>
+      <td>0.011994</td>
+      <td>0.049747</td>
+      <td>1.000000</td>
+      <td>0.075672</td>
+      <td>0.023677</td>
+      <td>0.037640</td>
+      <td>0.000000</td>
+      <td>0.076988</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.055730</td>
+      <td>0.018471</td>
+    </tr>
+    <tr>
+      <th>Kalimat 8</th>
+      <td>0.120632</td>
+      <td>0.236869</td>
+      <td>0.140987</td>
+      <td>0.000000</td>
+      <td>0.013271</td>
+      <td>0.091534</td>
+      <td>0.075672</td>
+      <td>1.000000</td>
+      <td>0.182729</td>
+      <td>0.074768</td>
+      <td>0.000000</td>
+      <td>0.020322</td>
+      <td>0.025656</td>
+      <td>0.000000</td>
+      <td>0.169870</td>
+      <td>0.093108</td>
+    </tr>
+    <tr>
+      <th>Kalimat 9</th>
+      <td>0.154712</td>
+      <td>0.074602</td>
+      <td>0.133634</td>
+      <td>0.000000</td>
+      <td>0.148726</td>
+      <td>0.034483</td>
+      <td>0.023677</td>
+      <td>0.182729</td>
+      <td>1.000000</td>
+      <td>0.078300</td>
+      <td>0.000000</td>
+      <td>0.068284</td>
+      <td>0.118643</td>
+      <td>0.065524</td>
+      <td>0.140012</td>
+      <td>0.167396</td>
+    </tr>
+    <tr>
+      <th>Kalimat 10</th>
+      <td>0.036799</td>
+      <td>0.051642</td>
+      <td>0.135729</td>
+      <td>0.048643</td>
+      <td>0.033514</td>
+      <td>0.079325</td>
+      <td>0.037640</td>
+      <td>0.074768</td>
+      <td>0.078300</td>
+      <td>1.000000</td>
+      <td>0.022311</td>
+      <td>0.000000</td>
+      <td>0.347397</td>
+      <td>0.068515</td>
+      <td>0.253332</td>
+      <td>0.017963</td>
+    </tr>
+    <tr>
+      <th>Kalimat 11</th>
+      <td>0.013164</td>
+      <td>0.033490</td>
+      <td>0.068119</td>
+      <td>0.083603</td>
+      <td>0.000000</td>
+      <td>0.098890</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.022311</td>
+      <td>1.000000</td>
+      <td>0.126116</td>
+      <td>0.000000</td>
+      <td>0.052440</td>
+      <td>0.028424</td>
+      <td>0.090611</td>
+    </tr>
+    <tr>
+      <th>Kalimat 12</th>
+      <td>0.041588</td>
+      <td>0.016799</td>
+      <td>0.017499</td>
+      <td>0.000000</td>
+      <td>0.081561</td>
+      <td>0.130473</td>
+      <td>0.076988</td>
+      <td>0.020322</td>
+      <td>0.068284</td>
+      <td>0.000000</td>
+      <td>0.126116</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.269572</td>
+      <td>0.029933</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Kalimat 13</th>
+      <td>0.017502</td>
+      <td>0.000000</td>
+      <td>0.044185</td>
+      <td>0.000000</td>
+      <td>0.155361</td>
+      <td>0.047315</td>
+      <td>0.000000</td>
+      <td>0.025656</td>
+      <td>0.118643</td>
+      <td>0.347397</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.097758</td>
+      <td>0.074573</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Kalimat 14</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.082912</td>
+      <td>0.054251</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.065524</td>
+      <td>0.068515</td>
+      <td>0.052440</td>
+      <td>0.269572</td>
+      <td>0.097758</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Kalimat 15</th>
+      <td>0.088204</td>
+      <td>0.090054</td>
+      <td>0.176460</td>
+      <td>0.061970</td>
+      <td>0.069504</td>
+      <td>0.009671</td>
+      <td>0.055730</td>
+      <td>0.169870</td>
+      <td>0.140012</td>
+      <td>0.253332</td>
+      <td>0.028424</td>
+      <td>0.029933</td>
+      <td>0.074573</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.037936</td>
+    </tr>
+    <tr>
+      <th>Kalimat 16</th>
+      <td>0.118053</td>
+      <td>0.033790</td>
+      <td>0.044356</td>
+      <td>0.067310</td>
+      <td>0.000000</td>
+      <td>0.053804</td>
+      <td>0.018471</td>
+      <td>0.093108</td>
+      <td>0.167396</td>
+      <td>0.017963</td>
+      <td>0.090611</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.037936</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+      
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-3e34646e-dd06-428c-9c14-cf56d122eaf2')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+      
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+    
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-3e34646e-dd06-428c-9c14-cf56d122eaf2 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-3e34646e-dd06-428c-9c14-cf56d122eaf2');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+  
+    </div>
+  </div>
+  </div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Matriks TF-IDF telah dihitung sebelumnya (tfidf_matrix)</span>
+<span class="c1"># Menghitung cosine similarity antara semua pasangan kalimat</span>
+<span class="n">similarity_matrix</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="p">,</span> <span class="n">tfidf_matrix</span><span class="p">)</span>
+
+<span class="c1"># Nama kolom dan indeks untuk DataFrame</span>
+<span class="n">sentence_indices</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;Kalimat </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sentences</span><span class="p">))]</span>
+
+<span class="c1"># Membuat DataFrame dari hasil cosine similarity</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">similarity_matrix</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">sentence_indices</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">sentence_indices</span><span class="p">)</span>
+
+<span class="c1"># Membuat grafik matriks</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">cax</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">cax</span><span class="p">)</span>
+
+<span class="c1"># Memberi label pada sumbu X dan Y</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+
+<span class="c1"># Menampilkan nilai similarity pada matriks</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)):</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">iat</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">]</span><span class="si">:</span><span class="s1">.1f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/ee756e22c4b1e1ed3f42c6f333c8091b7278866d27bb7a10fe4348286b1f327f.png" src="_images/ee756e22c4b1e1ed3f42c6f333c8091b7278866d27bb7a10fe4348286b1f327f.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># grafik dari matriks similarity</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+
+<span class="c1"># menambahkan simpul (node) ke grafik yang mewakili setiap kalimat</span>
+<span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">sentences</span><span class="p">:</span>
+    <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+
+<span class="c1"># Tambahkan tepi (edge) antara kalimat berdasarkan similarity</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sentences</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentences</span><span class="p">)):</span>
+        <span class="n">similarity</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>  <span class="c1"># Mengambil similarity dari DataFrame</span>
+        <span class="k">if</span> <span class="n">similarity</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">sentences</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">sentences</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">weight</span><span class="o">=</span><span class="n">similarity</span><span class="p">)</span>
+
+<span class="c1"># Hitung closeness centrality untuk setiap simpul</span>
+<span class="n">closeness_centrality</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">closeness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="s1">&#39;weight&#39;</span><span class="p">)</span>
+
+<span class="c1"># Cetak closeness centrality</span>
+<span class="k">for</span> <span class="n">sentence</span><span class="p">,</span> <span class="n">centrality</span> <span class="ow">in</span> <span class="n">closeness_centrality</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Closeness Centrality of </span><span class="si">{</span><span class="n">sentence</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">centrality</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Closeness Centrality of 
+				Jember, Jawa Timur (ANTARA) - Pasangan bakal calon presiden (capres) dan calon wakil presiden (cawapres) , Anies Baswedan dan Muhaimin Iskandar mengajak warga Kabupaten Jember, Jawa Timur mendoakan rakyat Palestina agar segera merdeka dan menjadi bangsa yang mandiri.: 26.8935
+Closeness Centrality of &quot;Mari berdoa untuk saudara kita di Palestina, memohon agar rakyat Palestina selamat dari gempuran Israel dan segera merdeka,&quot; kata Muhaimin di sela-sela kegiatan safari politiknya di Jember, Minggu.: 25.6711
+Closeness Centrality of Ia mengajak ribuan warga yang hadir dalam kegiatan jalan sehat bersarung di Jember untuk membaca surat Al-Fatihah bersama-sama dengan harapan bangsa Palestina segera merdeka dan menjadi bangsa yang mandiri.: 24.0248
+Closeness Centrality of &quot;Bangsa Indonesia diharapkan memberikan jalan keluar.: 16.1777
+Closeness Centrality of Semua ikhtiar sudah dilakukan dan diplomasi oleh Menteri Luar Negeri Bu Retno sudah dijalankan, namun PBB tumpul tak berdaya,&quot; tuturnya.: 28.3045
+Closeness Centrality of Menurutnya Indonesia harus memberikan pertolongan kepada rakyat Palestina karena Indonesia sebagai negara dengan penduduk muslim terbesar, sehingga bisa menolong negara lain.: 22.9010
+Closeness Centrality of &quot;Kalau AMIN menang maka kami tolong saudara kita di Palestina, Rohingya, dan saudara muslim lainnya di dunia,&quot; ucap Wakil Ketua DPR RI tersebut.: 24.7154
+Closeness Centrality of Muhaimin juga mengenakan pita bendera Palestina yang diikat di lengannya sebagai aksi solidaritas mendukung perjuangan rakyat Palestina untuk merdeka dan mengecam tindakan brutal Israel.: 23.3488
+Closeness Centrality of Sementara itu Anies Baswedan juga memuji Menteri Luar Negeri Retno Marsudi dalam membela perjuangan rakyat Palestina dan mengutuk kekejaman Israel yang menyebabkan banyak warga sipil menjadi korban.: 18.5995
+Closeness Centrality of &quot;Saya ingin sampaikan apresiasi kepada Ibu Menlu yang di dalam Sidang PBB menyampaikan sikap yang tegas, yang jelas, atas posisi Indonesia,&quot; katanya.: 21.9126
+Closeness Centrality of Ia mengatakan sejak awal kemerdekaan Republik Indonesia menggarisbawahi sesuatu tentang kemerdekaan adalah hak segala bangsa, sehingga penjajahan harus dihapuskan dari muka bumi.: 24.1352
+Closeness Centrality of &quot;Kami semua hapal itu dan harus dipegang, sehingga harus diperjuangkan.: 22.4216
+Closeness Centrality of Saya hormat kepada sikap yang dilakukan Kementerian Luar Negeri melalui Ibu Menlu.: 20.7050
+Closeness Centrality of Sikap itu harus terus dijaga,&quot; tuturnya.: 12.7490
+Closeness Centrality of Dalam sidang darurat Majelis Umum Persatuan Bangsa-Bangsa, di New York, Amerika Serikat, Kamis (26/10), Menlu Retno mengecam Dewan Keamanan PBB yang gagal bertindak dan gagal menghasilkan tindakan yang tegas dalam konflik Palestina dan Israel.: 22.3473
+Closeness Centrality of Baca juga: Anies Baswedan ajak pendukungnya doakan kemerdekaan Palestina
+Baca juga: Anies Baswedan ajak masyarakat Indonesia doakan bangsa Palestina
+ Pewarta: Zumrotun SolichahEditor: Guido Merung				COPYRIGHT © ANTARA 2023: 22.0334
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Matriks TF-IDF telah dihitung sebelumnya (tfidf_matrix)</span>
+<span class="c1"># Hitung cosine similarity antara semua pasangan kalimat</span>
+<span class="n">similarity_matrix</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="p">,</span> <span class="n">tfidf_matrix</span><span class="p">)</span>
+
+<span class="c1"># Buat grafik berarah (DiGraph) berdasarkan similarity_matrix</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">similarity_matrix</span><span class="p">)):</span>
+    <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">similarity_matrix</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">similarity_matrix</span><span class="p">)):</span>
+        <span class="n">similarity</span> <span class="o">=</span> <span class="n">similarity_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">similarity</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span><span class="p">:</span>
+            <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+
+<span class="c1"># Hitung closeness centrality</span>
+<span class="n">closeness_centrality</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">closeness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+
+<span class="c1"># Visualisasi closeness centrality</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">node_size</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span> <span class="o">*</span> <span class="mi">1000</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">closeness_centrality</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="n">node_size</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">arrows</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Cetak closeness centrality</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Closeness Centrality:&quot;</span><span class="p">)</span>
+<span class="n">sorted_closeness_centrality</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">closeness_centrality</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">centrality</span> <span class="ow">in</span> <span class="n">sorted_closeness_centrality</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Node </span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">centrality</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/4f93a9bf1ed91c94d7199d1c0e9dbea6f13e667174c89cc297e04a79b512b0b9.png" src="_images/4f93a9bf1ed91c94d7199d1c0e9dbea6f13e667174c89cc297e04a79b512b0b9.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Closeness Centrality:
+Node 0: 0.9375
+Node 2: 0.9375
+Node 5: 0.9375
+Node 9: 0.9375
+Node 14: 0.9375
+Node 8: 0.8824
+Node 1: 0.8333
+Node 7: 0.8333
+Node 4: 0.7895
+Node 6: 0.7895
+Node 11: 0.7895
+Node 15: 0.7895
+Node 10: 0.7500
+Node 12: 0.7143
+Node 3: 0.6522
+Node 13: 0.6522
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">top_nodes</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># Membuat dictionary untuk menyimpan tiga node teratas</span>
+
+<span class="c1"># Mengambil tiga node teratas</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">centrality</span> <span class="ow">in</span> <span class="n">sorted_closeness_centrality</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">top_nodes</span><span class="p">[</span><span class="n">node</span><span class="p">]</span> <span class="o">=</span> <span class="n">centrality</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">count</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">break</span>
+
+<span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">centrality</span> <span class="ow">in</span> <span class="n">sorted_closeness_centrality</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">node_index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>  <span class="c1"># Mendapatkan indeks node dari nama node</span>
+    <span class="n">sentence</span> <span class="o">=</span> <span class="n">sentences</span><span class="p">[</span><span class="n">node_index</span><span class="p">]</span>  <span class="c1"># Mengambil kalimat yang sesuai dengan node</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">centrality</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">sentence</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0: 0.9375 - 
+				Jember, Jawa Timur (ANTARA) - Pasangan bakal calon presiden (capres) dan calon wakil presiden (cawapres) , Anies Baswedan dan Muhaimin Iskandar mengajak warga Kabupaten Jember, Jawa Timur mendoakan rakyat Palestina agar segera merdeka dan menjadi bangsa yang mandiri.
+2: 0.9375 - Ia mengajak ribuan warga yang hadir dalam kegiatan jalan sehat bersarung di Jember untuk membaca surat Al-Fatihah bersama-sama dengan harapan bangsa Palestina segera merdeka dan menjadi bangsa yang mandiri.
+5: 0.9375 - Menurutnya Indonesia harus memberikan pertolongan kepada rakyat Palestina karena Indonesia sebagai negara dengan penduduk muslim terbesar, sehingga bisa menolong negara lain.
+9: 0.9375 - &quot;Saya ingin sampaikan apresiasi kepada Ibu Menlu yang di dalam Sidang PBB menyampaikan sikap yang tegas, yang jelas, atas posisi Indonesia,&quot; katanya.
+14: 0.9375 - Dalam sidang darurat Majelis Umum Persatuan Bangsa-Bangsa, di New York, Amerika Serikat, Kamis (26/10), Menlu Retno mengecam Dewan Keamanan PBB yang gagal bertindak dan gagal menghasilkan tindakan yang tegas dalam konflik Palestina dan Israel.
+8: 0.8824 - Sementara itu Anies Baswedan juga memuji Menteri Luar Negeri Retno Marsudi dalam membela perjuangan rakyat Palestina dan mengutuk kekejaman Israel yang menyebabkan banyak warga sipil menjadi korban.
+1: 0.8333 - &quot;Mari berdoa untuk saudara kita di Palestina, memohon agar rakyat Palestina selamat dari gempuran Israel dan segera merdeka,&quot; kata Muhaimin di sela-sela kegiatan safari politiknya di Jember, Minggu.
+7: 0.8333 - Muhaimin juga mengenakan pita bendera Palestina yang diikat di lengannya sebagai aksi solidaritas mendukung perjuangan rakyat Palestina untuk merdeka dan mengecam tindakan brutal Israel.
+4: 0.7895 - Semua ikhtiar sudah dilakukan dan diplomasi oleh Menteri Luar Negeri Bu Retno sudah dijalankan, namun PBB tumpul tak berdaya,&quot; tuturnya.
+6: 0.7895 - &quot;Kalau AMIN menang maka kami tolong saudara kita di Palestina, Rohingya, dan saudara muslim lainnya di dunia,&quot; ucap Wakil Ketua DPR RI tersebut.
+11: 0.7895 - &quot;Kami semua hapal itu dan harus dipegang, sehingga harus diperjuangkan.
+15: 0.7895 - Baca juga: Anies Baswedan ajak pendukungnya doakan kemerdekaan Palestina
+Baca juga: Anies Baswedan ajak masyarakat Indonesia doakan bangsa Palestina
+ Pewarta: Zumrotun SolichahEditor: Guido Merung				COPYRIGHT © ANTARA 2023
+10: 0.7500 - Ia mengatakan sejak awal kemerdekaan Republik Indonesia menggarisbawahi sesuatu tentang kemerdekaan adalah hak segala bangsa, sehingga penjajahan harus dihapuskan dari muka bumi.
+12: 0.7143 - Saya hormat kepada sikap yang dilakukan Kementerian Luar Negeri melalui Ibu Menlu.
+3: 0.6522 - &quot;Bangsa Indonesia diharapkan memberikan jalan keluar.
+13: 0.6522 - Sikap itu harus terus dijaga,&quot; tuturnya.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Crawling.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Crawling PTA</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Fanky
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
