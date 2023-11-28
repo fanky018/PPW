@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -138,6 +138,7 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="intro.html">
@@ -176,6 +177,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Latent%20Dirichlet%20Allocation.html">LDA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Crawling.html">Crawling PTA</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Crawling Berita</a></li>
+
+
+
+
+
 </ul>
 
     </div>
@@ -360,6 +366,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -370,6 +377,7 @@ document.write(`
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -377,7 +385,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -393,6 +403,20 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Crawling Berita</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cosine-similarity">Cosine Similarity</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#graph">Graph</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#page-rank">Page Rank</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -474,6 +498,9 @@ Baca juga: Anies Baswedan ajak masyarakat Indonesia doakan bangsa Palestina
 </div>
 </div>
 </div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tf-idf">
+<h1>TF-IDF<a class="headerlink" href="#tf-idf" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inisialisasi penghitung TF-IDF</span>
@@ -855,6 +882,9 @@ zumrotun: 0.1781
 </div>
 </div>
 </div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cosine-similarity">
+<h1>Cosine Similarity<a class="headerlink" href="#cosine-similarity" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Indeks kalimat yang akan dibandingkan</span>
@@ -1039,7 +1069,7 @@ Cosine Similarity antara Kalimat 15 dan Kalimat 16: 0.0379
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3e34646e-dd06-428c-9c14-cf56d122eaf2" class="colab-df-container">
+  <div id="df-31b1a75d-e857-4e64-83dd-a7256a80b985" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1387,7 +1417,7 @@ Cosine Similarity antara Kalimat 15 dan Kalimat 16: 0.0379
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-3e34646e-dd06-428c-9c14-cf56d122eaf2')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-31b1a75d-e857-4e64-83dd-a7256a80b985')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1439,12 +1469,12 @@ Cosine Similarity antara Kalimat 15 dan Kalimat 16: 0.0379
 
     <script>
       const buttonEl =
-        document.querySelector('#df-3e34646e-dd06-428c-9c14-cf56d122eaf2 button.colab-df-convert');
+        document.querySelector('#df-31b1a75d-e857-4e64-83dd-a7256a80b985 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-3e34646e-dd06-428c-9c14-cf56d122eaf2');
+        const element = document.querySelector('#df-31b1a75d-e857-4e64-83dd-a7256a80b985');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1503,6 +1533,9 @@ Cosine Similarity antara Kalimat 15 dan Kalimat 16: 0.0379
 <img alt="_images/ee756e22c4b1e1ed3f42c6f333c8091b7278866d27bb7a10fe4348286b1f327f.png" src="_images/ee756e22c4b1e1ed3f42c6f333c8091b7278866d27bb7a10fe4348286b1f327f.png" />
 </div>
 </div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="graph">
+<h1>Graph<a class="headerlink" href="#graph" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># grafik dari matriks similarity</span>
@@ -1566,7 +1599,7 @@ Baca juga: Anies Baswedan ajak masyarakat Indonesia doakan bangsa Palestina
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">similarity_matrix</span><span class="p">)):</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">similarity_matrix</span><span class="p">)):</span>
         <span class="n">similarity</span> <span class="o">=</span> <span class="n">similarity_matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">similarity</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">similarity</span> <span class="o">&gt;</span> <span class="mf">0.15</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span><span class="p">:</span>
             <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
 
 <span class="c1"># Hitung closeness centrality</span>
@@ -1591,24 +1624,60 @@ Baca juga: Anies Baswedan ajak masyarakat Indonesia doakan bangsa Palestina
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/4f93a9bf1ed91c94d7199d1c0e9dbea6f13e667174c89cc297e04a79b512b0b9.png" src="_images/4f93a9bf1ed91c94d7199d1c0e9dbea6f13e667174c89cc297e04a79b512b0b9.png" />
+<img alt="_images/d4ed8ee67ffa704982d8e0a3852fe2f2906adfe59f58db0fa213bd791dd58273.png" src="_images/d4ed8ee67ffa704982d8e0a3852fe2f2906adfe59f58db0fa213bd791dd58273.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Closeness Centrality:
-Node 0: 0.9375
-Node 2: 0.9375
-Node 5: 0.9375
-Node 9: 0.9375
-Node 14: 0.9375
-Node 8: 0.8824
-Node 1: 0.8333
-Node 7: 0.8333
-Node 4: 0.7895
-Node 6: 0.7895
-Node 11: 0.7895
-Node 15: 0.7895
-Node 10: 0.7500
-Node 12: 0.7143
-Node 3: 0.6522
-Node 13: 0.6522
+Node 7: 0.3333
+Node 14: 0.3333
+Node 2: 0.3175
+Node 0: 0.2899
+Node 1: 0.2899
+Node 8: 0.2778
+Node 9: 0.2667
+Node 6: 0.2083
+Node 12: 0.2083
+Node 15: 0.2020
+Node 4: 0.1626
+Node 3: 0.0667
+Node 5: 0.0667
+Node 11: 0.0667
+Node 13: 0.0667
+Node 10: 0.0000
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="closeness-centrality">
+<h1>Closeness Centrality<a class="headerlink" href="#closeness-centrality" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Closeness Centrality:&quot;</span><span class="p">)</span>
+<span class="c1"># for node, closeness in closeness_centrality.items():</span>
+<span class="c1">#     print(f&quot;Node {node}: {closeness:.4f}&quot;)</span>
+<span class="n">sorted_closeness</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">closeness_centrality</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">closeness</span> <span class="ow">in</span> <span class="n">sorted_closeness</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Node </span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">closeness</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Closeness Centrality:
+Node 7: 0.3333
+Node 14: 0.3333
+Node 2: 0.3175
+Node 0: 0.2899
+Node 1: 0.2899
+Node 8: 0.2778
+Node 9: 0.2667
+Node 6: 0.2083
+Node 12: 0.2083
+Node 15: 0.2020
+Node 4: 0.1626
+Node 3: 0.0667
+Node 5: 0.0667
+Node 11: 0.0667
+Node 13: 0.0667
+Node 10: 0.0000
 </pre></div>
 </div>
 </div>
@@ -1633,25 +1702,63 @@ Node 13: 0.6522
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0: 0.9375 - 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7: 0.3333 - Muhaimin juga mengenakan pita bendera Palestina yang diikat di lengannya sebagai aksi solidaritas mendukung perjuangan rakyat Palestina untuk merdeka dan mengecam tindakan brutal Israel.
+14: 0.3333 - Dalam sidang darurat Majelis Umum Persatuan Bangsa-Bangsa, di New York, Amerika Serikat, Kamis (26/10), Menlu Retno mengecam Dewan Keamanan PBB yang gagal bertindak dan gagal menghasilkan tindakan yang tegas dalam konflik Palestina dan Israel.
+2: 0.3175 - Ia mengajak ribuan warga yang hadir dalam kegiatan jalan sehat bersarung di Jember untuk membaca surat Al-Fatihah bersama-sama dengan harapan bangsa Palestina segera merdeka dan menjadi bangsa yang mandiri.
+0: 0.2899 - 
 				Jember, Jawa Timur (ANTARA) - Pasangan bakal calon presiden (capres) dan calon wakil presiden (cawapres) , Anies Baswedan dan Muhaimin Iskandar mengajak warga Kabupaten Jember, Jawa Timur mendoakan rakyat Palestina agar segera merdeka dan menjadi bangsa yang mandiri.
-2: 0.9375 - Ia mengajak ribuan warga yang hadir dalam kegiatan jalan sehat bersarung di Jember untuk membaca surat Al-Fatihah bersama-sama dengan harapan bangsa Palestina segera merdeka dan menjadi bangsa yang mandiri.
-5: 0.9375 - Menurutnya Indonesia harus memberikan pertolongan kepada rakyat Palestina karena Indonesia sebagai negara dengan penduduk muslim terbesar, sehingga bisa menolong negara lain.
-9: 0.9375 - &quot;Saya ingin sampaikan apresiasi kepada Ibu Menlu yang di dalam Sidang PBB menyampaikan sikap yang tegas, yang jelas, atas posisi Indonesia,&quot; katanya.
-14: 0.9375 - Dalam sidang darurat Majelis Umum Persatuan Bangsa-Bangsa, di New York, Amerika Serikat, Kamis (26/10), Menlu Retno mengecam Dewan Keamanan PBB yang gagal bertindak dan gagal menghasilkan tindakan yang tegas dalam konflik Palestina dan Israel.
-8: 0.8824 - Sementara itu Anies Baswedan juga memuji Menteri Luar Negeri Retno Marsudi dalam membela perjuangan rakyat Palestina dan mengutuk kekejaman Israel yang menyebabkan banyak warga sipil menjadi korban.
-1: 0.8333 - &quot;Mari berdoa untuk saudara kita di Palestina, memohon agar rakyat Palestina selamat dari gempuran Israel dan segera merdeka,&quot; kata Muhaimin di sela-sela kegiatan safari politiknya di Jember, Minggu.
-7: 0.8333 - Muhaimin juga mengenakan pita bendera Palestina yang diikat di lengannya sebagai aksi solidaritas mendukung perjuangan rakyat Palestina untuk merdeka dan mengecam tindakan brutal Israel.
-4: 0.7895 - Semua ikhtiar sudah dilakukan dan diplomasi oleh Menteri Luar Negeri Bu Retno sudah dijalankan, namun PBB tumpul tak berdaya,&quot; tuturnya.
-6: 0.7895 - &quot;Kalau AMIN menang maka kami tolong saudara kita di Palestina, Rohingya, dan saudara muslim lainnya di dunia,&quot; ucap Wakil Ketua DPR RI tersebut.
-11: 0.7895 - &quot;Kami semua hapal itu dan harus dipegang, sehingga harus diperjuangkan.
-15: 0.7895 - Baca juga: Anies Baswedan ajak pendukungnya doakan kemerdekaan Palestina
+1: 0.2899 - &quot;Mari berdoa untuk saudara kita di Palestina, memohon agar rakyat Palestina selamat dari gempuran Israel dan segera merdeka,&quot; kata Muhaimin di sela-sela kegiatan safari politiknya di Jember, Minggu.
+8: 0.2778 - Sementara itu Anies Baswedan juga memuji Menteri Luar Negeri Retno Marsudi dalam membela perjuangan rakyat Palestina dan mengutuk kekejaman Israel yang menyebabkan banyak warga sipil menjadi korban.
+9: 0.2667 - &quot;Saya ingin sampaikan apresiasi kepada Ibu Menlu yang di dalam Sidang PBB menyampaikan sikap yang tegas, yang jelas, atas posisi Indonesia,&quot; katanya.
+6: 0.2083 - &quot;Kalau AMIN menang maka kami tolong saudara kita di Palestina, Rohingya, dan saudara muslim lainnya di dunia,&quot; ucap Wakil Ketua DPR RI tersebut.
+12: 0.2083 - Saya hormat kepada sikap yang dilakukan Kementerian Luar Negeri melalui Ibu Menlu.
+15: 0.2020 - Baca juga: Anies Baswedan ajak pendukungnya doakan kemerdekaan Palestina
 Baca juga: Anies Baswedan ajak masyarakat Indonesia doakan bangsa Palestina
  Pewarta: Zumrotun SolichahEditor: Guido Merung				COPYRIGHT © ANTARA 2023
-10: 0.7500 - Ia mengatakan sejak awal kemerdekaan Republik Indonesia menggarisbawahi sesuatu tentang kemerdekaan adalah hak segala bangsa, sehingga penjajahan harus dihapuskan dari muka bumi.
-12: 0.7143 - Saya hormat kepada sikap yang dilakukan Kementerian Luar Negeri melalui Ibu Menlu.
-3: 0.6522 - &quot;Bangsa Indonesia diharapkan memberikan jalan keluar.
-13: 0.6522 - Sikap itu harus terus dijaga,&quot; tuturnya.
+4: 0.1626 - Semua ikhtiar sudah dilakukan dan diplomasi oleh Menteri Luar Negeri Bu Retno sudah dijalankan, namun PBB tumpul tak berdaya,&quot; tuturnya.
+3: 0.0667 - &quot;Bangsa Indonesia diharapkan memberikan jalan keluar.
+5: 0.0667 - Menurutnya Indonesia harus memberikan pertolongan kepada rakyat Palestina karena Indonesia sebagai negara dengan penduduk muslim terbesar, sehingga bisa menolong negara lain.
+11: 0.0667 - &quot;Kami semua hapal itu dan harus dipegang, sehingga harus diperjuangkan.
+13: 0.0667 - Sikap itu harus terus dijaga,&quot; tuturnya.
+10: 0.0000 - Ia mengatakan sejak awal kemerdekaan Republik Indonesia menggarisbawahi sesuatu tentang kemerdekaan adalah hak segala bangsa, sehingga penjajahan harus dihapuskan dari muka bumi.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="page-rank">
+<h1>Page Rank<a class="headerlink" href="#page-rank" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hitung PageRank</span>
+<span class="n">pagerank</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+
+<span class="c1"># Cetak PageRank dalam urutan dari terbesar ke terkecil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;PageRank :&quot;</span><span class="p">)</span>
+<span class="n">sorted_pagerank</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">pagerank</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">rank</span> <span class="ow">in</span> <span class="n">sorted_pagerank</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Node </span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">rank</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>PageRank :
+Node 1: 0.1012
+Node 8: 0.0811
+Node 14: 0.0795
+Node 7: 0.0769
+Node 0: 0.0757
+Node 2: 0.0754
+Node 12: 0.0701
+Node 3: 0.0660
+Node 5: 0.0660
+Node 11: 0.0660
+Node 13: 0.0660
+Node 9: 0.0622
+Node 4: 0.0397
+Node 15: 0.0329
+Node 6: 0.0314
+Node 10: 0.0099
 </pre></div>
 </div>
 </div>
@@ -1686,7 +1793,7 @@ Baca juga: Anies Baswedan ajak masyarakat Indonesia doakan bangsa Palestina
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="Crawling.html"
@@ -1704,6 +1811,26 @@ Baca juga: Anies Baswedan ajak masyarakat Indonesia doakan bangsa Palestina
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Crawling Berita</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cosine-similarity">Cosine Similarity</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#graph">Graph</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#page-rank">Page Rank</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -1720,6 +1847,7 @@ By Fanky
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -1746,8 +1874,8 @@ By Fanky
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
